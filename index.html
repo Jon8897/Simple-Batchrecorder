@@ -460,19 +460,6 @@
               padding-top: 21px;" />
             </div>
             </div>
-            <div
-
-              data-aos="fade-left"
-            >
-              <img src="images/locationtransactiondrilldown.png" alt="" class="img-fluid" />
-            </div>
-            <div
-
-              data-aos="fade-left"
-            >
-              <img src="images/locationtransactiondrilldown2.png" alt="" class="img-fluid" style="
-              padding-top: 21px;" />
-            </div>
           </div>
           <!--End of Batch Transactions Info-->
 
@@ -518,8 +505,10 @@
               <h3 class="m-0"><br>Purchase Order Processing</h3>
               <div class="info-para">
                 <p class="py-4 m-0 text-muted">
-                  LocationRecorder fully integrates with P.O.P. allowing stock to be booked into specific locations via our GRN routine.
-                  If P.O.P. is not being used the In routine from the main menu within Products and services can be used. 
+                  BatchRecorder fully integrates with P.O.P. allowing batch 
+                  numbers and expiry dates to be booked in via our GRN routine. 
+                  If P.O.P. is not being used the In routine from the main menu 
+                  within Products and Services can be used. 
                 </p>
                 <!--<p class="font-weight-medium text-muted"> 
                 </p>-->
@@ -548,10 +537,12 @@
               <h3 class="m-0">GRN</h3>
               <div class="info-para">
                 <p class="py-4 m-0 text-muted">
-                  Selecting a Purchase Order with a status of ON-ORDER displays the full order details and allows the goods 
-                  to be booked into the default or a specific location. The order line can be split and booked into multiple locations. 
-                  Sage Delivered status is updated by this routine.The original purchase order can be drilled into from the LocationRecorder. 
-                  Location Trans enquiry screen.                  
+                  Selecting a Purchase Order with a status of ON-ORDER 
+                  displays the full order details and allows the goods 
+                  to be booked including the batch number and expiry date. 
+                  The order line can be split to record multiple multiple 
+                  batches, or part delivery. Sage Delivered status is updated 
+                  by this routine. .                  
                 </p>
                 <!--<p class="font-weight-medium text-muted"> 
                 </p>-->
@@ -597,7 +588,7 @@
               <div class="info-para">
                 <p class="py-4 m-0 text-muted">
                   BatchRecorder fully integrates with S.O.P. allowing stock to be allocated and 
-                  picked from specific locations. The allocation process is accessed within Sage 50c 
+                  picked from specific batches. The allocation process is accessed within Sage 50c 
                 </p>
                 <!--<p class="font-weight-medium text-muted"> 
                 </p>-->
@@ -626,9 +617,10 @@
               <h3 class="m-0">Batch Allocate</h3>
               <div class="info-para">
                 <p class="py-4 m-0 text-muted">
-                  Stock held at any batch is shown within the Sales Order for allocation. This can be 
-                  automatically based on a default batch number or manually choosing which batch you wish to 
-                  pick from. Stock can be picked from multiple batches.   
+                  Available batches are shown for each product line 
+                  or can be selected automatically using FEFO (First 
+                  Expired First Out). Muliple batches can be selected 
+                  for each line.   
                 </p>
                 <!--<p class="font-weight-medium text-muted"> 
                 </p>-->
@@ -650,7 +642,8 @@
             >
               <div class="info-para">
                 <p class="py-4 m-0 text-muted">
-                  <br>The Pick List option outputs information to Excel to provide a Pick Sheet for the warehouse .   
+                  <br>The Pick List option outputs information to Excel to provide 
+                  a Pick Sheet for the warehouse .   
                 </p>
                 <!--<p class="font-weight-medium text-muted"> 
                 </p>-->
@@ -677,39 +670,59 @@
                 </p>-->
               </div>
             </div>
+
+            <div class="row align-items-center">
+              <div
+                class="col-12 grid-margin grid-margin-lg-0"
+                data-aos="fade-right"
+              >
+                <div class="info-para">
+                  <p class="py-4 m-0 text-muted" style="
+                  padding-left: 15px;">
+                    <br>When confirmed pick. The order is updated with 
+                    the batch information and expiry date if applicable.    
+                  </p>
+                  <!--<p class="font-weight-medium text-muted"> 
+                  </p>-->
+                </div>
+              </div>
+              <div
+  
+                data-aos="fade-left"
+              >
+                <img src="images/batchproductsaleorder.png" alt="" class="img-fluid" style="
+                padding-left: 30px;"/>
+              </div>
+            </div>
+
+            <div class="row align-items-center">
+              <div
+                class="col-12 grid-margin grid-margin-lg-0"
+                data-aos="fade-right"
+              >
+                <div class="info-para">
+                  <p class="py-4 m-0 text-muted" style="
+                  padding-left: 15px;" >
+                    <br>Dispatch order this will create an invoice. 
+                    In the invoice you will find product code and the batch 
+                    number with expiry date. Also showing the quantity that 
+                    has been ordered.    
+                  </p>
+                  <!--<p class="font-weight-medium text-muted"> 
+                  </p>-->
+                </div>
+              </div>
+              <div
+  
+                data-aos="fade-left"
+              >
+                <img src="images/batchproductinvoice.png" alt="" class="img-fluid" style="
+                padding-left: 30px;" />
+              </div>
+            </div>
+
           </div>
           <!--End of Batch Allocate  Info-->
-
-          <!--Batch Auto Allocate -->
-          <!-- <br>
-           <div class="row align-items-center">
-            <div
-              class="col-12 grid-margin grid-margin-lg-0"
-              data-aos="fade-right"
-            >
-            <div id="wrap-container">
-              <div id="wrap-img">
-              <img src="images/locdesside.png" class="">
-              </div>
-              <h3 class="m-0">Batch Auto Allocate</h3>
-              <div class="info-para">
-                <p class="py-4 m-0 text-muted">
-                  Once the allocation has been confirmed by the warehouse the Pick is confirmed. 
-                  This is done by simply clicking on Confirm Pick  
-                </p>
-                <p class="font-weight-medium text-muted"> 
-                </p>
-              </div>
-              </div>
-            </div>
-            <div
-
-              data-aos="fade-left"
-            >
-              <img src="images/locationdespatch.png" alt="" class="img-fluid" />
-            </div>
-          </div> -->
-          <!--End of Batch Auto Allocate  Info-->
 
         </section>
         <!--End of Information-->
@@ -768,49 +781,6 @@
           <div class="feature-row">
           </div>
           <div class="feature-row">
-
-            <!-- Column Four
-            <div class="feature-column">
-              <div class="card">
-                <div class="icon">
-                  <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                </div>
-                <h3 class="feature-h3"></h3>
-                <p class="feature-p">
-                  Assign batch products 
-                  to Sales Orders              
-                </p>
-              </div>
-            </div>
-
-            Column Five
-            <div class="feature-column">
-              <div class="card">
-                <div class="icon">
-                  <i class="fa-solid fa-computer"></i>
-                </div>
-                <h3 class="feature-h3"></h3>
-                <p class="feature-p">
-                  No need to 
-                  log users out
-                  while using
-                </p>
-              </div>
-            </div>
-
-            Column Six
-            <div class="feature-column">
-              <div class="card">
-                <div class="icon">
-                  <i class="fa-solid fa-s"></i>
-                </div>
-                <h3 class="feature-h3"></h3>
-                <p class="feature-p">
-                  Can be run 
-                  directly from Sage
-                </p>
-              </div>
-            </div> -->
         </div>
         </section>
         <!--End of Features-->
