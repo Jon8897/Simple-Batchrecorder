@@ -1,149 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!--Site Meta-->
-    <title>BatchRecorder</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
-    <meta
-      name="keywords"
-      content="BatchRecorder,Batch Recorder, batchrecorder, batch Recorder, Sage50, Sage, Aston Berkeley, lot recording, serial recording"
-    />
-    <meta
-      name="description"
-      content="BatchRecorder provides a simple and efficient way to
-      record the stock movement and sales of items requiring batch / lot traceability or sell by information."
-    />
-    <!--Basic-->
-    <meta name="author" content="Aston Berkeley" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!--Owl Carousel-->
-    <link
-      rel="stylesheet"
-      href="vendors/owl-carousel/css/owl.carousel.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="vendors/owl-carousel/css/owl.theme.default.css"
-    />
-    <!-- Font Awesome CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-    />
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <!--Styles-->
-    <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css" />
-    <link rel="stylesheet" href="vendors/aos/css/aos.css" />
-    <link rel="stylesheet" href="css/style.min.css" />
-  </head>
-  <!--Body-->
-  <body id="body" data-spy="scroll" data-target=".navbar" data-offset="100">
-    <!--Navbar-->
-    <header id="header-section">
-      <nav class="navbar navbar-expand-lg pl-3 pl-sm-0" id="navbar">
-        <div class="container">
-          <div class="navbar-brand-wrapper d-flex w-100">
-            <img src="images/ABSlogo.png" alt="" />
-            <button
-              class="navbar-toggler ml-auto"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="mdi mdi-menu navbar-toggler-icon"></span>
-            </button>
-          </div>
-          <div
-            class="collapse navbar-collapse navbar-menu-wrapper"
-            id="navbarSupportedContent"
-          >
-            <ul
-              class="navbar-nav align-items-lg-center align-items-start ml-auto"
-            >
-              <li
-                class="d-flex align-items-center justify-content-between pl-4 pl-lg-0"
-              >
-                <div class="navbar-collapse-logo">
-                  <img src="images/ABSlogo.png" alt="" />
-                </div>
-                <button
-                  class="navbar-toggler close-button"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#navbarSupportedContent"
-                  aria-controls="navbarSupportedContent"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <span class="mdi mdi-close navbar-toggler-icon pl-5"></span>
-                </button>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#header-section"
-                  >Home <span class="sr-only">(current)</span></a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#digital-marketing-section">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#feedback-section">Features</a>
-              </li>
-              <!--<li class="nav-item">
-              </li>-->
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <!--End of Navbar-->
 
-    <!--Introduction-->
-    <div class="banner">
+<head>
+  <!--Site Meta-->
+  <title>BatchRecorder</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+  <meta name="keywords"
+    content="BatchRecorder,Batch Recorder, batchrecorder, batch Recorder, Sage50, Sage, Aston Berkeley, lot recording, serial recording" />
+  <meta name="description" content="BatchRecorder provides a simple and efficient way to
+      record the stock movement and sales of items requiring batch / lot traceability or sell by information." />
+  <!--Basic-->
+  <meta name="author" content="Aston Berkeley" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!--Owl Carousel-->
+  <link rel="stylesheet" href="vendors/owl-carousel/css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="vendors/owl-carousel/css/owl.theme.default.css" />
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <!--Styles-->
+  <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css" />
+  <link rel="stylesheet" href="vendors/aos/css/aos.css" />
+  <link rel="stylesheet" href="css/style.min.css" />
+</head>
+<!--Body-->
+
+<body id="body" data-spy="scroll" data-target=".navbar" data-offset="100">
+  <!--Navbar-->
+  <header id="header-section">
+    <nav class="navbar navbar-expand-lg pl-3 pl-sm-0" id="navbar">
       <div class="container">
-        <!--<h1 class="font-weight-semibold"
-        </div>-->
-        <img src="images/BatchRecorder LOGO.jpg" alt="" class="img-fluid" />
+        <div class="navbar-brand-wrapper d-flex w-100">
+          <img src="images/ABSlogo.png" alt="" />
+          <button class="navbar-toggler ml-auto"  onclick="showCloseBtn()" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="mdi mdi-menu navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse navbar-menu-wrapper" id="navbarSupportedContent">
+          <ul class="navbar-nav align-items-lg-center align-items-start ml-auto">
+            <li class="d-flex align-items-center justify-content-between pl-4 pl-lg-0">
+              <div class="navbar-collapse-logo">
+                <img src="images/ABSlogo.png" alt="" />
+              </div>
+              <button class="navbar-toggler close-button"type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="mdi mdi-close navbar-toggler-icon pl-5"></span>
+              </button>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#header-section">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#digital-marketing-section">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#feedback-section">Features</a>
+            </li>
+            <li class="nav-item" id="nav-item-close">
+              <button type="button" onclick="hideCloseBtn()" class="close" aria-label="Close" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </li>
+            <!--<li class="nav-item">
+              </li>-->
+          </ul>
+        </div>
       </div>
+    </nav>
+  </header>
+  <!--End of Navbar-->
+
+  <!--Introduction-->
+  <div class="banner">
+    <div class="container">
+      <!--<h1 class="font-weight-semibold"
+        </div>-->
+      <img src="images/BatchRecorder LOGO.jpg" alt="" class="img-fluid" />
     </div>
-    <div class="content-wrapper">
-      <div class="container">
-        <!--Title-->
-        <section class="features-overview" id="features-section">
-          <div class="content-header">
-            <h2>
-              Batch Recorder for Sage 50c, <br />
-              Batch / lot & serial number traceability for Sage 50c
-            </h2>
-            <h6 class="section-subtitle text-muted">
-              <br>
-              BatchRecorder provides a simple and efficient way to record batch, 
-              lot numbers or serial numbers within Sage50c. This gives increased 
-              functionality eliminating the need to migrate to larger system like 
-              Sage 200, saving thousands of pounds.
-            </h6>
-            <h6 class="section-subtitle text-muted">
-              <br>
-              Although BatchRecorder is fully integrated to Sage 50c it still allows Sage 50c 
-              updates to new versions. Sage stock continues to work as normal.
-            </h6>
-            <h6 class="section-subtitle text-muted">
-              <br>
-                The key to the system's success is simplicity; it can be easily added to existing 
-                Sage 50c systems or installed as new. Existing Sage users require no additional
-                training.
-            </h6>
-          </div>
-          <div class="d-md-flex justify-content-between">
+  </div>
+  <div class="content-wrapper">
+    <div class="container">
+      <!--Title-->
+      <section class="features-overview" id="features-section">
+        <div class="content-header">
+          <h2>
+            Batch Recorder for Sage 50c, <br />
+            Batch / lot & serial number traceability for Sage 50c
+          </h2>
+          <h6 class="section-subtitle text-muted">
+            <br>
+            BatchRecorder provides a simple and efficient way to record batch,
+            lot numbers or serial numbers within Sage50c. This gives increased
+            functionality eliminating the need to migrate to larger system like
+            Sage 200, saving thousands of pounds.
+          </h6>
+          <h6 class="section-subtitle text-muted">
+            <br>
+            Although BatchRecorder is fully integrated to Sage 50c it still allows Sage 50c
+            updates to new versions. Sage stock continues to work as normal.
+          </h6>
+          <h6 class="section-subtitle text-muted">
+            <br>
+            The key to the system's success is simplicity; it can be easily added to existing
+            Sage 50c systems or installed as new. Existing Sage users require no additional
+            training.
+          </h6>
+        </div>
+        <div class="d-md-flex justify-content-between">
           <!--Core Features-->
           <div class="content-wrapper">
             <div class="container">
@@ -156,46 +127,46 @@
                 </div>
               </div>
               <div class="core-feature-wrap">
-              <div class="item">
-                <div class="item-title">
-                  Full batch traceability with drill downs into the original purchase and sales orders
+                <div class="item">
+                  <div class="item-title">
+                    Full batch traceability with drill downs into the original purchase and sales orders
+                  </div>
                 </div>
-              </div>
-              <div class="item">
-                <div class="item-title">
-                  Record Sell By or Expiry Dates
+                <div class="item">
+                  <div class="item-title">
+                    Record Sell By or Expiry Dates
+                  </div>
                 </div>
-              </div>
-              <div class="item">
-                <div class="item-title">
-                  Expiry Date warnings
+                <div class="item">
+                  <div class="item-title">
+                    Expiry Date warnings
+                  </div>
                 </div>
-              </div>
-              <div class="item">
-                <div class="item-title">
-                  Allocate or despatch batches manually or automatically by FEFO (First Expired First Out)
+                <div class="item">
+                  <div class="item-title">
+                    Allocate or despatch batches manually or automatically by FEFO (First Expired First Out)
+                  </div>
                 </div>
-              </div>
-              <div class="item">
-                <div class="item-title">
-                  Batch and expiry date recorded on sales order and invoice
+                <div class="item">
+                  <div class="item-title">
+                    Batch and expiry date recorded on sales order and invoice
+                  </div>
                 </div>
-              </div>
-              <div class="item">
-                <div class="item-title">
-                  Full stock enquiry showing actual and free stock in each batch
+                <div class="item">
+                  <div class="item-title">
+                    Full stock enquiry showing actual and free stock in each batch
+                  </div>
                 </div>
-              </div>
-              <div class="item">
-                <div class="item-title">
-                  Full audit trail of all transactions
+                <div class="item">
+                  <div class="item-title">
+                    Full audit trail of all transactions
+                  </div>
                 </div>
-              </div>
-              <div class="item">
-                <div class="item-title">
-                  Record batch and expiry details whilst booking in Purchase Orders
+                <div class="item">
+                  <div class="item-title">
+                    Record batch and expiry details whilst booking in Purchase Orders
+                  </div>
                 </div>
-              </div>
               </div>
             </div>
           </div>
@@ -203,55 +174,43 @@
 
           <!--Features section-->
           <!--End of Features-->
-          </div>
-        </section>
-        <!--End of introduction-->
+        </div>
+      </section>
+      <!--End of introduction-->
 
-        <!--Information-->
-        <section
-          class="digital-marketing-service"
-          id="digital-marketing-section"
-        >
-          <!--Menu Info-->
-          <div class="row align-items-center">
-            <div
-              class="col-12 grid-margin grid-margin-lg-0"
-              data-aos="fade-right"
-            >
+      <!--Information-->
+      <section class="digital-marketing-service" id="digital-marketing-section">
+        <!--Menu Info-->
+        <div class="row align-items-center">
+          <div class="col-12 grid-margin grid-margin-lg-0" data-aos="fade-right">
             <div id="wrap-container">
-            <div id="wrap-img">
-            <img src="images/batchmenuside.png" class="">
-            </div>
+              <div id="wrap-img">
+                <img src="images/batchmenuside.png" class="">
+              </div>
               <h3 class="m-0">Main Menu</h3>
               <div class="info-para">
                 <p class="py-4 m-0 text-muted">
-                  BatchRecorder is fully integrated to Sage 50c. Clicking on BatchRecorder 
+                  BatchRecorder is fully integrated to Sage 50c. Clicking on BatchRecorder
                   on the Products and Services menu gives access to all the routines.
                 </p>
                 <!--<p class="font-weight-medium text-muted"> 
                 </p>-->
               </div>
-              </div>
-            </div>
-            <div
-
-              data-aos="fade-left"
-            >
-              <img src="images/batchrecordermenu.png" alt="" class="img-fluid" />
             </div>
           </div>
-          <!--End of menu info-->
+          <div data-aos="fade-left">
+            <img src="images/batchrecordermenu.png" alt="" class="img-fluid" />
+          </div>
+        </div>
+        <!--End of menu info-->
 
-          <!--in Info-->
-          <br>
-          <div class="row align-items-center">
-            <div
-              class="col-12 grid-margin grid-margin-lg-0"
-              data-aos="fade-right"
-            >
+        <!--in Info-->
+        <br>
+        <div class="row align-items-center">
+          <div class="col-12 grid-margin grid-margin-lg-0" data-aos="fade-right">
             <div id="wrap-container">
               <div id="wrap-img">
-              <img src="images/in-side.png" class="">
+                <img src="images/in-side.png" class="">
               </div>
               <h3 class="m-0">In</h3>
               <div class="info-para">
@@ -260,28 +219,22 @@
                 </p>
                 <!--<p class="font-weight-medium text-muted"> 
                 </p>-->
-                </div>
               </div>
             </div>
-            <div
-
-              data-aos="fade-left"
-            >
-              <img src="images/batchrecorderin.png" alt="" class="img-fluid" />
-            </div>
           </div>
-          <!--End of in Info-->
+          <div data-aos="fade-left">
+            <img src="images/batchrecorderin.png" alt="" class="img-fluid" />
+          </div>
+        </div>
+        <!--End of in Info-->
 
-          <!--out Info-->
-          <br>
-           <div class="row align-items-center">
-            <div
-              class="col-12 grid-margin grid-margin-lg-0"
-              data-aos="fade-right"
-            >
+        <!--out Info-->
+        <br>
+        <div class="row align-items-center">
+          <div class="col-12 grid-margin grid-margin-lg-0" data-aos="fade-right">
             <div id="wrap-container">
               <div id="wrap-img">
-              <img src="images/out-side.png" class="">
+                <img src="images/out-side.png" class="">
               </div>
               <h3 class="m-0">Out</h3>
               <div class="info-para">
@@ -290,491 +243,398 @@
                 </p>
                 <!--<p class="font-weight-medium text-muted"> 
                 </p>-->
-                </div>
               </div>
             </div>
-            <div
-
-              data-aos="fade-left"
-            >
-              <img src="images/batchrecorderout.png" alt="" class="img-fluid" />
-            </div>
           </div>
-          <!--End of out Info-->
+          <div data-aos="fade-left">
+            <img src="images/batchrecorderout.png" alt="" class="img-fluid" />
+          </div>
+        </div>
+        <!--End of out Info-->
 
-          <!--Transfer Info-->
-          <br>
-          <div class="row align-items-center">
-            <div
-              class="col-12 grid-margin grid-margin-lg-0"
-              data-aos="fade-right"
-            >
+        <!--Transfer Info-->
+        <br>
+        <div class="row align-items-center">
+          <div class="col-12 grid-margin grid-margin-lg-0" data-aos="fade-right">
             <div id="wrap-container">
               <div id="wrap-img">
-              <img src="images/transferside.png" class="">
+                <img src="images/transferside.png" class="">
               </div>
               <h3 class="m-0">Transfer</h3>
               <div class="info-para">
                 <p class="py-4 m-0 text-muted">
-                  Transfer, allows batches to be transferred.  
-                  Stock is booked out and back in automatically 
-                  and recorded on the audit trail.                
+                  Transfer, allows batches to be transferred.
+                  Stock is booked out and back in automatically
+                  and recorded on the audit trail.
                 </p>
                 <!--<p class="font-weight-medium text-muted"> 
                 </p>-->
-                </div>
               </div>
             </div>
-            <div
-
-              data-aos="fade-left"
-            >
-              <img src="images/batchrecordertransfer2.png" alt="" class="img-fluid" />
-            </div>
-            <br>
           </div>
-          <!--End of transfer Info-->
-
-          <!--Batch List Info-->
+          <div data-aos="fade-left">
+            <img src="images/batchrecordertransfer2.png" alt="" class="img-fluid" />
+          </div>
           <br>
-          <div class="row align-items-center">
-            <div
-              class="col-12 grid-margin grid-margin-lg-0"
-              data-aos="fade-right"
-            >
+        </div>
+        <!--End of transfer Info-->
+
+        <!--Batch List Info-->
+        <br>
+        <div class="row align-items-center">
+          <div class="col-12 grid-margin grid-margin-lg-0" data-aos="fade-right">
             <div id="wrap-container">
               <div id="wrap-img">
-              <img src="images/batchlistside.png" class="">
+                <img src="images/batchlistside.png" class="">
               </div>
               <h3 class="m-0">Batch List </h3>
               <div class="info-para">
                 <p class="py-4 m-0 text-muted">
-                  Batch List provides a full stock enquiry showing product batch details. 
+                  Batch List provides a full stock enquiry showing product batch details.
                   Individual products or a full list can be selected. The search allows expiry date,
                   expiry date - date range, data received, location, ref 1, ref 2, and account.
                 </p>
-                </div>
               </div>
             </div>
-            <div
-
-              data-aos="fade-left"
-            >
-              <img src="images/batchproductlist.png" alt="" class="img-fluid" />
-            </div>
           </div>
-          <div class="row align-items-center">
-            <div
-              class="col-12 grid-margin grid-margin-lg-0"
-              data-aos="fade-right"
-            >
-              <div class="info-para">
-                <p class="py-4 m-0 text-muted">
-                  <br>Ticking Total by Product, shows the total product stock with all available batch numbers. 
-                  Clicking on Excel outputs the data automatically to Excel for the hard copy reports.
-                </p>
-                <!--<p class="font-weight-medium text-muted"> 
+          <div data-aos="fade-left">
+            <img src="images/batchproductlist.png" alt="" class="img-fluid" />
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-12 grid-margin grid-margin-lg-0" data-aos="fade-right">
+            <div class="info-para">
+              <p class="py-4 m-0 text-muted">
+                <br>Ticking Total by Product, shows the total product stock with all available batch numbers.
+                Clicking on Excel outputs the data automatically to Excel for the hard copy reports.
+              </p>
+              <!--<p class="font-weight-medium text-muted"> 
                 </p>-->
-              </div>
-            </div>
-            <div
-
-              data-aos="fade-left"
-            >
-              <img src="images/batchtickbyproduct.png" alt="" class="img-fluid" />
             </div>
           </div>
-          <!--End of Batch List Info-->
+          <div data-aos="fade-left">
+            <img src="images/batchtickbyproduct.png" alt="" class="img-fluid" />
+          </div>
+        </div>
+        <!--End of Batch List Info-->
 
-          <!--Batch Transactions Info-->
-          <br>
-          <div class="row align-items-center">
-            <div
-              class="col-12 grid-margin grid-margin-lg-0"
-              data-aos="fade-right"
-            >
+        <!--Batch Transactions Info-->
+        <br>
+        <div class="row align-items-center">
+          <div class="col-12 grid-margin grid-margin-lg-0" data-aos="fade-right">
             <div id="wrap-container">
               <div id="wrap-img">
-              <img src="images/batchtransside.png" class="">
+                <img src="images/batchtransside.png" class="">
               </div>
               <h3 class="m-0">Batch Transactions</h3>
               <div class="info-para">
                 <p class="py-4 m-0 text-muted">
-                  Batch Transactions, is a full audit trail of all batch activity 
-                  and can be searched by product code, batch number, Supplier GRN, 
-                  Reference, Account or URN which is a unique reference assigned when 
-                  allocating batches to invoices.               
+                  Batch Transactions, is a full audit trail of all batch activity
+                  and can be searched by product code, batch number, Supplier GRN,
+                  Reference, Account or URN which is a unique reference assigned when
+                  allocating batches to invoices.
                 </p>
                 <!--<p class="font-weight-medium text-muted"> 
                 </p>-->
-                </div>
               </div>
-            </div>
-            <div
-
-              data-aos="fade-left"
-            >
-              <img src="images/batchtansactiondropdown.png" alt="" class="img-fluid" />
-            </div>
-
-            <div
-
-              data-aos="fade-left"
-            >
-              <img src="images/batchtransactionorders.png" alt="" class="img-fluid" style="
-              padding-top: 21px;" />
             </div>
           </div>
-          <div class="row align-items-center">
-            <div
-              class="col-12 grid-margin grid-margin-lg-0"
-              data-aos="fade-right"
-            >
-              <div class="info-para">
-                <p class="py-4 m-0 text-muted">
-                  <br>Drilldowns are available on Product, Ref, Account No or Name. This allows you to drill into the Purchase and Sales Orders. 
-                  The Orders are automatically opened within Sage.           
-                </p>
-                <!--<p class="font-weight-medium text-muted"> 
-                </p>-->
-              </div>
-              <div
+          <div data-aos="fade-left">
+            <img src="images/batchtansactiondropdown.png" alt="" class="img-fluid" />
+          </div>
 
-              data-aos="fade-left"
-            >
+          <div data-aos="fade-left">
+            <img src="images/batchtransactionorders.png" alt="" class="img-fluid" style="
+              padding-top: 21px;" />
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-12 grid-margin grid-margin-lg-0" data-aos="fade-right">
+            <div class="info-para">
+              <p class="py-4 m-0 text-muted">
+                <br>Drilldowns are available on Product, Ref, Account No or Name. This allows you to drill into the
+                Purchase and Sales Orders.
+                The Orders are automatically opened within Sage.
+              </p>
+              <!--<p class="font-weight-medium text-muted"> 
+                </p>-->
+            </div>
+            <div data-aos="fade-left">
               <img src="images/batchtransactiondrilldown.png" alt="" class="img-fluid" />
             </div>
 
-            <div
-
-              data-aos="fade-left"
-            >
+            <div data-aos="fade-left">
               <img src="images/batchtransactiondrilldown2.png" alt="" class="img-fluid" style="
               padding-top: 21px;" />
             </div>
-            </div>
           </div>
-          <!--End of Batch Transactions Info-->
+        </div>
+        <!--End of Batch Transactions Info-->
 
-          <!--BOM Transfer Info-->
-          <br>
-           <div class="row align-items-center">
-            <div
-              class="col-12 grid-margin grid-margin-lg-0"
-              data-aos="fade-right"
-            >
+        <!--BOM Transfer Info-->
+        <br>
+        <div class="row align-items-center">
+          <div class="col-12 grid-margin grid-margin-lg-0" data-aos="fade-right">
             <div id="wrap-container">
               <div id="wrap-img">
-              <img src="images/bomtransside.png" class="">
+                <img src="images/bomtransside.png" class="">
               </div>
               <h3 class="m-0">BOM Transfer</h3>
               <div class="info-para">
                 <p class="py-4 m-0 text-muted">
-                  BOM Transfer, moves component stock to a finished assembly. 
-                  This is controlled by the standard Sage Bill of Materials. 
-                  Component batch details are selected and the finished item batch 
+                  BOM Transfer, moves component stock to a finished assembly.
+                  This is controlled by the standard Sage Bill of Materials.
+                  Component batch details are selected and the finished item batch
                   and expiry date giving assembly traceability.
                 </p>
                 <!--<p class="font-weight-medium text-muted"> 
                 </p>-->
-                </div>
               </div>
-            </div>
-            <div
-
-              data-aos="fade-left"
-            >
-              <img src="images/bacthbomtransfer.png" alt="" class="img-fluid" />
             </div>
           </div>
-          <!--End of BOM transfer Info-->
+          <div data-aos="fade-left">
+            <img src="images/bacthbomtransfer.png" alt="" class="img-fluid" />
+          </div>
+        </div>
+        <!--End of BOM transfer Info-->
 
-          <!--Purchase Order Processing Info-->
-          <div class="row align-items-center">
-            <div
-              class="col-12 grid-margin grid-margin-lg-0"
-              data-aos="fade-right"
-            >
-              <h3 class="m-0"><br>Purchase Order Processing</h3>
-              <div class="info-para">
-                <p class="py-4 m-0 text-muted">
-                  BatchRecorder fully integrates with P.O.P. allowing batch 
-                  numbers and expiry dates to be booked in via our GRN routine. 
-                  If P.O.P. is not being used the In routine from the main menu 
-                  within Products and Services can be used. 
-                </p>
-                <!--<p class="font-weight-medium text-muted"> 
+        <!--Purchase Order Processing Info-->
+        <div class="row align-items-center">
+          <div class="col-12 grid-margin grid-margin-lg-0" data-aos="fade-right">
+            <h3 class="m-0"><br>Purchase Order Processing</h3>
+            <div class="info-para">
+              <p class="py-4 m-0 text-muted">
+                BatchRecorder fully integrates with P.O.P. allowing batch
+                numbers and expiry dates to be booked in via our GRN routine.
+                If P.O.P. is not being used the In routine from the main menu
+                within Products and Services can be used.
+              </p>
+              <!--<p class="font-weight-medium text-muted"> 
                 </p>-->
-              </div>
-              <div
-
-              data-aos="fade-left"
-            >
+            </div>
+            <div data-aos="fade-left">
               <img src="images/batchpurchaseordering.png" alt="" class="img-fluid" style="
               padding-left: 0px;" />
             </div>
-            </div>
           </div>
-          <!--End of Purchase Order Processing Info-->
+        </div>
+        <!--End of Purchase Order Processing Info-->
 
-          <!--GRN Info-->
-          <br>
-          <div class="row align-items-center">
-            <div
-              class="col-12 grid-margin grid-margin-lg-0"
-              data-aos="fade-right"
-            ><div id="wrap-container">
+        <!--GRN Info-->
+        <br>
+        <div class="row align-items-center">
+          <div class="col-12 grid-margin grid-margin-lg-0" data-aos="fade-right">
+            <div id="wrap-container">
               <div id="wrap-img">
-              <img src="images/grnside.png" class="">
+                <img src="images/grnside.png" class="">
               </div>
               <h3 class="m-0">GRN</h3>
               <div class="info-para">
                 <p class="py-4 m-0 text-muted">
-                  Selecting a Purchase Order with a status of ON-ORDER 
-                  displays the full order details and allows the goods 
-                  to be booked in, including the batch number and expiry date. 
+                  Selecting a Purchase Order with a status of ON-ORDER
+                  displays the full order details and allows the goods
+                  to be booked in, including the batch number and expiry date.
                   The order line can be split to record multiple
-                  batches, or part delivery. Sage Delivered status is updated 
-                  by this routine.                 
-                </p>
-                <!--<p class="font-weight-medium text-muted"> 
-                </p>-->
-                </div>
-              </div>
-            </div>
-            <div
-
-              data-aos="fade-left"
-            >
-              <img src="images/popgrn.png" alt="" class="img-fluid" />
-            </div>
-          </div>
-          <div class="row align-items-center">
-            <div
-              class="col-12 grid-margin grid-margin-lg-0"
-              data-aos="fade-right"
-            >
-              <div class="info-para">
-                <p class="py-4 m-0 text-muted">
-                  <br>In addition to the GRN routine booking stock into the BatchRecorder database Sage stock is also updated and the location shown on the Activity.                  
+                  batches, or part delivery. Sage Delivered status is updated
+                  by this routine.
                 </p>
                 <!--<p class="font-weight-medium text-muted"> 
                 </p>-->
               </div>
             </div>
-            <div
-
-              data-aos="fade-left"
-            >
-              <img src="images/grnactivity.png" alt="" class="img-fluid" />
-            </div>
           </div>
-          <!--End of GRN Info-->
-
-          <!--Sales Order Processing -->
-          <div class="row align-items-center">
-            <div
-              class="col-12 grid-margin grid-margin-lg-0"
-              data-aos="fade-right"
-            >
-              <h3 class="m-0"><br>Sales Order Processing </h3>
-              <div class="info-para">
-                <p class="py-4 m-0 text-muted">
-                  BatchRecorder fully integrates with S.O.P. allowing stock to be allocated and 
-                  picked from specific batches. The allocation process is accessed within Sage 50c.
-                </p>
-                <!--<p class="font-weight-medium text-muted"> 
+          <div data-aos="fade-left">
+            <img src="images/popgrn.png" alt="" class="img-fluid" />
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-12 grid-margin grid-margin-lg-0" data-aos="fade-right">
+            <div class="info-para">
+              <p class="py-4 m-0 text-muted">
+                <br>In addition to the GRN routine booking stock into the BatchRecorder database Sage stock is also
+                updated and the location shown on the Activity.
+              </p>
+              <!--<p class="font-weight-medium text-muted"> 
                 </p>-->
-              </div>
-            </div>
-            <div
-
-              data-aos="fade-left"
-            >
-              <img src="images/batchsopmenu.png" alt="" class="img-fluid" />
             </div>
           </div>
-          <!--End of Sales Order Processing  Info-->
+          <div data-aos="fade-left">
+            <img src="images/grnactivity.png" alt="" class="img-fluid" />
+          </div>
+        </div>
+        <!--End of GRN Info-->
 
-          <!--Batch Allocate Processing -->
-          <br>
-          <div class="row align-items-center">
-            <div
-              class="col-12 grid-margin grid-margin-lg-0"
-              data-aos="fade-right"
-            >
+        <!--Sales Order Processing -->
+        <div class="row align-items-center">
+          <div class="col-12 grid-margin grid-margin-lg-0" data-aos="fade-right">
+            <h3 class="m-0"><br>Sales Order Processing </h3>
+            <div class="info-para">
+              <p class="py-4 m-0 text-muted">
+                BatchRecorder fully integrates with S.O.P. allowing stock to be allocated and
+                picked from specific batches. The allocation process is accessed within Sage 50c.
+              </p>
+              <!--<p class="font-weight-medium text-muted"> 
+                </p>-->
+            </div>
+          </div>
+          <div data-aos="fade-left">
+            <img src="images/batchsopmenu.png" alt="" class="img-fluid" />
+          </div>
+        </div>
+        <!--End of Sales Order Processing  Info-->
+
+        <!--Batch Allocate Processing -->
+        <br>
+        <div class="row align-items-center">
+          <div class="col-12 grid-margin grid-margin-lg-0" data-aos="fade-right">
             <div id="wrap-container">
               <div id="wrap-img">
-              <img src="images/batchallside.png" class="">
+                <img src="images/batchallside.png" class="">
               </div>
               <h3 class="m-0">Batch Allocate</h3>
               <div class="info-para">
                 <p class="py-4 m-0 text-muted">
-                  Available batches are shown for each product line 
-                  or can be selected automatically using FEFO (First 
-                  Expired First Out). Multiple batches can be selected 
-                  for each line.   
+                  Available batches are shown for each product line
+                  or can be selected automatically using FEFO (First
+                  Expired First Out). Multiple batches can be selected
+                  for each line.
                 </p>
                 <!--<p class="font-weight-medium text-muted"> 
                 </p>-->
-                </div>
               </div>
             </div>
-            <div
+          </div>
+          <div data-aos="fade-left">
+            <img src="images/batchsopallocation.png" alt="" class="img-fluid" />
+          </div>
+        </div>
 
-              data-aos="fade-left"
-            >
-              <img src="images/batchsopallocation.png" alt="" class="img-fluid" />
+        <div class="row align-items-center">
+          <div class="col-12 grid-margin grid-margin-lg-0" data-aos="fade-right">
+            <div class="info-para">
+              <p class="py-4 m-0 text-muted">
+                <br>The Pick List option outputs information to Excel to provide
+                a Pick Sheet for the warehouse.
+              </p>
+              <!--<p class="font-weight-medium text-muted"> 
+                </p>-->
+            </div>
+          </div>
+          <div data-aos="fade-left">
+            <img src="images/batchpickinglist.png" alt="" class="img-fluid" />
+          </div>
+        </div>
+
+        <div class="row align-items-center">
+          <div class="col-12 grid-margin grid-margin-lg-0" data-aos="fade-right">
+            <div class="info-para">
+              <p class="py-4 m-0 text-muted">
+                Allocations can be changed or partial dispatches made.
+              </p>
+              <!--<p class="font-weight-medium text-muted"> 
+                </p>-->
             </div>
           </div>
 
           <div class="row align-items-center">
-            <div
-              class="col-12 grid-margin grid-margin-lg-0"
-              data-aos="fade-right"
-            >
+            <div class="col-12 grid-margin grid-margin-lg-0" data-aos="fade-right">
               <div class="info-para">
-                <p class="py-4 m-0 text-muted">
-                  <br>The Pick List option outputs information to Excel to provide 
-                  a Pick Sheet for the warehouse.   
-                </p>
-                <!--<p class="font-weight-medium text-muted"> 
-                </p>-->
-              </div>
-            </div>
-            <div
-
-              data-aos="fade-left"
-            >
-              <img src="images/batchpickinglist.png" alt="" class="img-fluid" />
-            </div>
-          </div>
-
-          <div class="row align-items-center">
-            <div
-              class="col-12 grid-margin grid-margin-lg-0"
-              data-aos="fade-right"
-            >
-              <div class="info-para">
-                <p class="py-4 m-0 text-muted">
-                  Allocations can be changed or partial dispatches made.
-                </p>
-                <!--<p class="font-weight-medium text-muted"> 
-                </p>-->
-              </div>
-            </div>
-
-            <div class="row align-items-center">
-              <div
-                class="col-12 grid-margin grid-margin-lg-0"
-                data-aos="fade-right"
-              >
-                <div class="info-para">
-                  <p class="py-4 m-0 text-muted" style="
+                <p class="py-4 m-0 text-muted" style="
                   padding-left: 15px;">
-                    <br>When picking has been completed the Confirm Pick 
-                    updates the Sales Order with batch and expiry dates.    
-                  </p>
-                  <!--<p class="font-weight-medium text-muted"> 
+                  <br>When picking has been completed the Confirm Pick
+                  updates the Sales Order with batch and expiry dates.
+                </p>
+                <!--<p class="font-weight-medium text-muted"> 
                   </p>-->
-                </div>
-              </div>
-              <div
-  
-                data-aos="fade-left"
-              >
-                <img src="images/batchproductsaleorder.png" alt="" class="img-fluid" style="
-                padding-left: 30px;"/>
               </div>
             </div>
-
-            <div class="row align-items-center">
-              <div
-                class="col-12 grid-margin grid-margin-lg-0"
-                data-aos="fade-right"
-              >
-                <div class="info-para">
-                  <p class="py-4 m-0 text-muted" style="
-                  padding-left: 15px;" >
-                    <br>Dispatch order this will create an invoice. 
-                    In the invoice you will find product code and the batch 
-                    number with expiry date. Also showing the quantity that 
-                    has been ordered.    
-                  </p>
-                  <!--<p class="font-weight-medium text-muted"> 
-                  </p>-->
-                </div>
-              </div>
-              <div
-  
-                data-aos="fade-left"
-              >
-                <img src="images/batchproductinvoice.png" alt="" class="img-fluid" style="
+            <div data-aos="fade-left">
+              <img src="images/batchproductsaleorder.png" alt="" class="img-fluid" style="
                 padding-left: 30px;" />
-              </div>
             </div>
-
           </div>
-          <!--End of Batch Allocate  Info-->
 
-        </section>
-        <!--End of Information-->
-
-        <!--Features-->
-        <section class="feadback-abs" id="feedback-section">
-          <div class="feature-row">
-            <h1 class="feature-title">Features</h1>
+          <div class="row align-items-center">
+            <div class="col-12 grid-margin grid-margin-lg-0" data-aos="fade-right">
+              <div class="info-para">
+                <p class="py-4 m-0 text-muted" style="
+                  padding-left: 15px;">
+                  <br>Dispatch order this will create an invoice.
+                  In the invoice you will find product code and the batch
+                  number with expiry date. Also showing the quantity that
+                  has been ordered.
+                </p>
+                <!--<p class="font-weight-medium text-muted"> 
+                  </p>-->
+              </div>
+            </div>
+            <div data-aos="fade-left">
+              <img src="images/batchproductinvoice.png" alt="" class="img-fluid" style="
+                padding-left: 30px;" />
+            </div>
           </div>
-          <div class="feature-row">
 
-            <!-- Column One -->
-            <div class="feature-column">
-              <div class="card">
-                <div class="icon">
-                  <i class="fa-solid fa-magnifying-glass-location"></i>
-                </div>
-                <h3 class="feature-h3"></h3>
-                <p class="feature-p">
-                  Record
-                  multiple batches              
-                </p>
-              </div>
-            </div>
+        </div>
+        <!--End of Batch Allocate  Info-->
 
-            <!-- Column Two -->
-            <div class="feature-column">
-              <div class="card">
-                <div class="icon">
-                  <i class="fa-solid fa-boxes-stacked"></i>
-                </div>
-                <h3 class="feature-h3"></h3>
-                <p class="feature-p">
-                  View stock levels
-                  for each batch
-                </p>
-              </div>
-            </div>
+      </section>
+      <!--End of Information-->
 
-            <!-- Column Three -->
-            <div class="feature-column">
-              <div class="card">
-                <div class="icon">
-                  <i class="fa-solid fa-location-pin-lock"></i>
-                </div>
-                <h3 class="feature-h3"></h3>
-                <p class="feature-p">
-                  Assign batches
-                  to Sales Orders
-                </p>
+      <!--Features-->
+      <section class="feadback-abs" id="feedback-section">
+        <div class="feature-row">
+          <h1 class="feature-title">Features</h1>
+        </div>
+        <div class="feature-row">
+
+          <!-- Column One -->
+          <div class="feature-column">
+            <div class="card">
+              <div class="icon">
+                <i class="fa-solid fa-magnifying-glass-location"></i>
               </div>
+              <h3 class="feature-h3"></h3>
+              <p class="feature-p">
+                Record
+                multiple batches
+              </p>
             </div>
+          </div>
+
+          <!-- Column Two -->
+          <div class="feature-column">
+            <div class="card">
+              <div class="icon">
+                <i class="fa-solid fa-boxes-stacked"></i>
+              </div>
+              <h3 class="feature-h3"></h3>
+              <p class="feature-p">
+                View stock levels
+                for each batch
+              </p>
+            </div>
+          </div>
+
+          <!-- Column Three -->
+          <div class="feature-column">
+            <div class="card">
+              <div class="icon">
+                <i class="fa-solid fa-location-pin-lock"></i>
+              </div>
+              <h3 class="feature-h3"></h3>
+              <p class="feature-p">
+                Assign batches
+                to Sales Orders
+              </p>
+            </div>
+          </div>
         </div>
 
         <section class="feadback-abs" id="feedback-section">
           <div class="feature-row">
           </div>
           <div class="feature-row">
-        </div>
+          </div>
         </section>
         <!--End of Features-->
 
@@ -783,7 +643,7 @@
 
         <!--Customer feedback-->
         <!--End of Customer Feedback-->
-        
+
         <!--Arrange a demo-->
         <section class="contact-us" id="contact-section">
           <div class="contact-us-bgimage grid-margin">
@@ -798,10 +658,10 @@
               </h6>
             </div>
             <div data-aos="fade-up">
-              <a href="mailto:sales@astonberkeley.com"!important>
-              <button class="btn btn-rounded btn-outline-danger">
-                Contact us
-              </button>
+              <a href="mailto:sales@astonberkeley.com" !important>
+                <button class="btn btn-rounded btn-outline-danger">
+                  Contact us
+                </button>
               </a>
             </div>
           </div>
@@ -815,8 +675,9 @@
             <div class="contact-details-cell col-12 col-md-6 col-lg-3 grid-margin">
               <img src="images/ABSlogo.png" alt="" class="pb-2" />
               <div class="pt-2">
-                <p class="text-muted m-0"><a href="mailto:sales@astonberkeley.com"!important>sales@astonberkeley.com</a></p>
-                <p class="text-muted m-0"><a href="tel:01925751100"!important>01925 751100</a></p>
+                <p class="text-muted m-0"><a href="mailto:sales@astonberkeley.com"
+                    !important>sales@astonberkeley.com</a></p>
+                <p class="text-muted m-0"><a href="tel:01925751100" !important>01925 751100</a></p>
               </div>
             </div>
             <!--End of contact info-->
@@ -834,20 +695,24 @@
                 />
               </form>-->
               <div class="pt-3">
-                <a href="tel:01925751100"!important>
-                <button class="btn btn-dark">
-                  Call Us
-                </button>
+                <a href="tel:01925751100" !important>
+                  <button class="btn btn-dark">
+                    Call Us
+                  </button>
                 </a>
               </div>
               <!--End of Newsletter-->
 
-            <!--Useful Links-->
+              <!--Useful Links-->
             </div>
             <div class="contact-details-cell col-12 col-md-6 col-lg-3 grid-margin">
               <h5 class="pb-2">Useful links</h5>
-              <a href="https://www.astonberkeley.com/" target="_blank"><p class="m-0 pb-2">Aston Berkeley</p></a>
-              <a href="https://www.locationrecorder.com/" target="_blank"><p class="m-0 pt-1 pb-2">LocationRecorder</p></a>
+              <a href="https://www.astonberkeley.com/" target="_blank">
+                <p class="m-0 pb-2">Aston Berkeley</p>
+              </a>
+              <a href="https://www.locationrecorder.com/" target="_blank">
+                <p class="m-0 pt-1 pb-2">LocationRecorder</p>
+              </a>
             </div>
             <!--Useful Links-->
 
@@ -858,12 +723,12 @@
                 Berkeley House <br />Whitbarrow Road Lymm<br />Warrington WA13
                 9AR
               </p>
-              <div
-                class="justify-content-center justify-content-md-start"
-              >
-                <a href="https://www.facebook.com/aston.berkeley.7/" target="_blank"><span class="mdi mdi-facebook"></span></a>
+              <div class="justify-content-center justify-content-md-start">
+                <a href="https://www.facebook.com/aston.berkeley.7/" target="_blank"><span
+                    class="mdi mdi-facebook"></span></a>
                 <a href="https://twitter.com/aston_berkeley" target="_blank"><span class="mdi mdi-twitter"></span></a>
-                <a href="https://www.linkedin.com/company/aston-berkeley-systems-ltd/?_l=en_US" target="_blank"><span class="mdi mdi-linkedin"></span></a>
+                <a href="https://www.linkedin.com/company/aston-berkeley-systems-ltd/?_l=en_US" target="_blank"><span
+                    class="mdi mdi-linkedin"></span></a>
               </div>
               <!--End of address/ socials-->
             </div>
@@ -874,11 +739,8 @@
         <!--Copyright-->
         <footer class="border-top">
           <p class="text-center text-muted pt-4">
-            Copyright © 2023<a
-              href="https://www.astonberkeley.com/"
-              class="px-1"
-              >Aston Berekeley.</a
-            >All rights reserved.
+            Copyright © 2023<a href="https://www.astonberkeley.com/" class="px-1">Aston Berekeley.</a>All rights
+            reserved.
           </p>
         </footer>
         <!--End of copyright-->
@@ -886,14 +748,15 @@
         <!-- Modal for Contact - us Button -->
         <!-- End of Model for Contact - us Button -->
 
-    <!--Scripts-->
-    <script src="vendors/jquery/jquery.min.js"></script>
-    <script src="vendors/bootstrap/bootstrap.min.js"></script>
-    <script src="vendors/owl-carousel/js/owl.carousel.min.js"></script>
-    <script src="vendors/aos/js/aos.js"></script>
-    <script src="js/landingpage.js"></script>
-    <script src="js/button.js"></script>
-    <!--End Script-->
-  </body>
-  <!--End Body-->
+        <!--Scripts-->
+        <script src="vendors/jquery/jquery.min.js"></script>
+        <script src="vendors/bootstrap/bootstrap.min.js"></script>
+        <script src="vendors/owl-carousel/js/owl.carousel.min.js"></script>
+        <script src="vendors/aos/js/aos.js"></script>
+        <script src="js/landingpage.js"></script>
+        <script src="js/button.js"></script>
+        <!--End Script-->
+</body>
+<!--End Body-->
+
 </html>
