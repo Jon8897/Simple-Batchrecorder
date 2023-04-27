@@ -10,4 +10,4 @@ Website for BatchRecorder single page website with future updates coming soon
 
 ## Link 
 
-https://www.bacthrecorder.com/
+https://www.batchrecorder.com/
